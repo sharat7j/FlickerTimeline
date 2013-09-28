@@ -1,6 +1,7 @@
 {
 	"id": "id",
 	"document_name": "document_name",
+	"subject": "subject",
 	"content": {},
 	"user_mail_ids": [],
 	"timestamp": "timestamp",
