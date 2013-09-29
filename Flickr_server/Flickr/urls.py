@@ -9,7 +9,7 @@ urlpatterns = patterns('',
     # Examples:
     # url(r'^$', 'Flickr.views.home', name='home'),
     # url(r'^Flickr/', include('Flickr.foo.urls')),
-    url (r'^tagSearch/(?P<tag>\w+)/$', 'FlickrExtractor.views.search', name='search'),
+    url (r'^tagSearch/(?P<tag>[\w|\W]+)/$', 'FlickrExtractor.views.search', name='search'),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     #url(r'^tag/', include('django.contrib.admindocs.urls')),
