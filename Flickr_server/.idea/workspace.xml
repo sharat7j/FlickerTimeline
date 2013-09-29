@@ -4,12 +4,14 @@
     <list default="true" id="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" name="Default" comment="" />
     <ignored path="Flickr.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/settings.py" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380432468959" ignored="false" />
+    <file path="/settings.py" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380494347155" ignored="false" />
     <file path="/urls.py" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380459311742" ignored="false" />
-    <file path="/views.py" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380487469315" ignored="false" />
+    <file path="/views.py" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380495101600" ignored="false" />
     <file path="/HttpUtils.py" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380487594811" ignored="false" />
     <file path="/models.py" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380485352667" ignored="false" />
-    <file path="/Flickr_Urls.py" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380485634854" ignored="false" />
+    <file path="/Flickr_Urls.py" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380496018319" ignored="false" />
+    <file path="/timeline.html" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380494848798" ignored="false" />
+    <file path="/JSONEncoder.py" changelist="47c8cf26-8a1b-4b2d-8ab9-a48e4f4587a2" time="1380490527392" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,99 +30,93 @@
     <favorites_list name="Flickr" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.37367994">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="models.py" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/FlickrExtractor/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="25" column="19" selection-start="470" selection-end="470" vertical-scroll-proportion="-2.655914">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="views.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FlickrExtractor/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="0" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="HttpUtils.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FlickrExtractor/HttpUtils.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="36" column="0" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
-                  <folding>
-                    <element signature="e#33#68#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="urlparse.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/urlparse.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="177" column="4" selection-start="6110" selection-end="6110" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="csrf.py" pinned="false" current="true" current-in-tab="true">
-            <entry file="file:///Library/Python/2.7/site-packages/django/views/decorators/csrf.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="76" column="0" selection-start="2684" selection-end="2684" vertical-scroll-proportion="0.47265625">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FlickrExtractor/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Flickr/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="19" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/base.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="181" column="0" selection-start="8521" selection-end="8521" vertical-scroll-proportion="0.0">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Flickr_Urls.py" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/FlickrExtractor/Flickr_Urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="123" selection-start="349" selection-end="349" vertical-scroll-proportion="-2.3076923">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="views.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FlickrExtractor/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="102" column="0" selection-start="3166" selection-end="3166" vertical-scroll-proportion="0.48630136">
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HttpUtils.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FlickrExtractor/HttpUtils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="37" column="0" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#33#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="csrf.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Library/Python/2.7/site-packages/django/views/decorators/csrf.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="0" selection-start="2684" selection-end="2684" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FlickrExtractor/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flickr/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Flickr/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="71" column="73" selection-start="2522" selection-end="2522" vertical-scroll-proportion="-9.307693">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Flickr_Urls.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FlickrExtractor/Flickr_Urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timeline.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/timeline.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="44" selection-start="575" selection-end="575" vertical-scroll-proportion="-5.2083335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/base.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="114" column="0" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -130,18 +126,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Flickr/settings.py" />
+        <option value="$PROJECT_DIR$/FlickrExtractor/models.py" />
+        <option value="$PROJECT_DIR$/FlickrExtractor/HttpUtils.py" />
+        <option value="$PROJECT_DIR$/FlickrExtractor/JSONEncoder.py" />
         <option value="$PROJECT_DIR$/FlickrExtractor/urls.py" />
         <option value="$PROJECT_DIR$/Flickr/urls.py" />
-        <option value="$PROJECT_DIR$/FlickrExtractor/models.py" />
-        <option value="$PROJECT_DIR$/FlickrExtractor/Flickr_Urls.py" />
+        <option value="$PROJECT_DIR$/Flickr/settings.py" />
+        <option value="$PROJECT_DIR$/templates/timeline.html" />
         <option value="$PROJECT_DIR$/FlickrExtractor/views.py" />
-        <option value="$PROJECT_DIR$/FlickrExtractor/HttpUtils.py" />
+        <option value="$PROJECT_DIR$/FlickrExtractor/Flickr_Urls.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
+    <option name="x" value="241" />
+    <option name="y" value="42" />
     <option name="width" value="1680" />
     <option name="height" value="940" />
   </component>
@@ -199,6 +198,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flickr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flickr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flickr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flickr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="site-resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flickr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flickr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flickr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Flickr" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="FlickrExtractor" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -225,8 +292,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/FlickrExtractor" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="FullScreen" value="false" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="dir.diff.last.used.directory" value="$PROJECT_DIR$/FlickrExtractor" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -235,6 +305,14 @@
     <option name="myDjangoConsoleState">
       <PyConsoleSettings />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
+    </key>
   </component>
   <component name="RunManager" selected="Django server.Flickr">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -362,15 +440,16 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="940" extended-state="0" />
-    <editor active="false" />
+    <frame x="241" y="42" width="1680" height="940" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296837" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.249694" sideWeight="0.38929442" order="1" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6107056" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6107056" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296837" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -378,7 +457,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -446,91 +524,30 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="python-line">
           <url>file://$PROJECT_DIR$/FlickrExtractor/views.py</url>
-          <line>16</line>
-          <option name="timeStamp" value="27" />
+          <line>102</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/FlickrExtractor/views.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="32" />
+      <option name="time" value="35" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/FlickrExtractor/Flickr_Urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="166" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flickr/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="6" selection-start="4328" selection-end="4328" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/dispatch/dispatcher.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="0" selection-start="5799" selection-end="5799" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="254" column="0" selection-start="8435" selection-end="8435" vertical-scroll-proportion="0.37028825">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/contrib/staticfiles/handlers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="0" selection-start="2371" selection-end="2371" vertical-scroll-proportion="0.7694013">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flickr/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file:///Library/Python/2.7/site-packages/django/utils/importlib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="0" selection-start="1178" selection-end="1178" vertical-scroll-proportion="0.8107477" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/FlickrExtractor/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Flickr/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/FlickrExtractor/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="19" selection-start="470" selection-end="470" vertical-scroll-proportion="-2.655914">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlickrExtractor/Flickr_Urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="123" selection-start="349" selection-end="349" vertical-scroll-proportion="-2.3076923">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="0" selection-start="8521" selection-end="8521" vertical-scroll-proportion="0.0">
+        <state line="25" column="19" selection-start="470" selection-end="470" vertical-scroll-proportion="-0.30601794">
           <folding />
         </state>
       </provider>
@@ -542,9 +559,89 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm20/python_stubs/596071422/json/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="376" column="6" selection-start="16629" selection-end="16629" vertical-scroll-proportion="0.35211268">
+          <folding>
+            <marker date="1380431909000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1380431909000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlickrExtractor/JSONEncoder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="113" selection-end="113" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/site-resources/js/locale/af.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlickrExtractor/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flickr/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="206" selection-end="206" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="0" selection-start="2684" selection-end="2684" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Python/2.7/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="114" column="0" selection-start="4779" selection-end="4779" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Flickr/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="73" selection-start="2522" selection-end="2522" vertical-scroll-proportion="-9.307693">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlickrExtractor/Flickr_Urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="393" selection-end="393" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/site-resources/json/timeline.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="53527" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/timeline.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="44" selection-start="575" selection-end="575" vertical-scroll-proportion="-5.2083335">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/FlickrExtractor/HttpUtils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="883" selection-end="883" vertical-scroll-proportion="0.0">
+        <state line="37" column="0" selection-start="952" selection-end="952" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#33#68#0" expanded="true" />
           </folding>
@@ -553,15 +650,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FlickrExtractor/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="0" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Python/2.7/site-packages/django/views/decorators/csrf.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="0" selection-start="2684" selection-end="2684" vertical-scroll-proportion="0.47265625">
-          <folding />
+        <state line="102" column="0" selection-start="3166" selection-end="3166" vertical-scroll-proportion="0.48630136">
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

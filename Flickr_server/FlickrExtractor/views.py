@@ -1,11 +1,15 @@
-from django.http import request
-from django.http import response
+from django.http import HttpResponse
 import HttpUtils
-import urllib2
 import json
+import JSONEncoder
+import os
 import models
 import Flickr_Urls
+from django.template.loader import get_template
+from django.template import Context
+
 from django.views.decorators.csrf import csrf_exempt
+
 import logging
 
 logger = logging.getLogger('Search')
@@ -21,12 +25,13 @@ def search(request, tag=None):
             details = getInfoOnRelatedPhotos(list)
             if details is not None:
                 data = generateTimelineJson(tag, details)
-
-            return HttpUtils.getSuccessfulResponse(data)
-        except:
+                # write to json file for generating the timeline
+                fileName = writeJson(data)
+                t = get_template('timeline.html')
+                html = t.render(Context({'file_name' : fileName}))
+                return HttpResponse(html)
+        except Exception as e:
             return HttpUtils.getBadRequestJsonResponse("Error Retrieving photos for tag", 404)
-
-
     else:
         return HttpUtils.getBadRequestJsonResponse("No tag received", 404)
 
@@ -85,3 +90,17 @@ def generateTimelineJson(tag, photoInfoList):
     output['timeline'] = header
 
     return output
+
+def writeJson(jsonData):
+    if jsonData is not None:
+        path = "static/site-resources/json/"
+        fileName = "timeline.json"
+        if not os.path.exists(path):
+            os.makedirs(path)
+
+        data = json.dumps(jsonData).encode('utf-8')
+        with open(path + fileName, "w") as outfile:
+            outfile.write(data)
+            return (fileName).encode('utf-8')
+    else:
+        return None
