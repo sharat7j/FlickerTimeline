@@ -14,7 +14,7 @@ logger = logging.getLogger('Search')
 def search(request, tag=None):
 
     if tag is not None:
-        r = tag;
+        r = HttpUtils.url_fix(tag);
         logger.debug('Found request as %s', r )
         try :
             list = getPhotosByTag(r)
@@ -33,8 +33,7 @@ def search(request, tag=None):
 def getPhotosByTag(tag):
         try:
             url = Flickr_Urls._SEARCH_URL.format(tag).encode('utf-8')
-            photoList = urllib2.urlopen(url).read().decode('utf-8')
-            #photos = json.loads(photoList, 'utf-8')
+            photoList = HttpUtils.sendRequest(url)
             list = models.RelatedList(photoList)._photoList
             return list
         except Exception as e:
@@ -45,17 +44,15 @@ def getInfoOnRelatedPhotos(photoList):
     # get info on each photo and
     outputPhotoList = []
     dateConflictHash = {}
-    count = 0
 
-    if photoList is not None and count < 10:
+    if photoList is not None:
         for photo in photoList:
             url = Flickr_Urls._GET_INFO_URL.format(photo._id).encode('utf-8')
-            photoInfo = urllib2.urlopen(url).read().decode('utf-8')
+            photoInfo = HttpUtils.sendRequest(url)
             info = photo.populatePhotoInfo(photoInfo)
             if info is not None:
                 #to do:  resolve conflicting taken dates
                 outputPhotoList.append(info)
-            count = count + 1
     # generate json data for timeline of photos
         return outputPhotoList
     else:

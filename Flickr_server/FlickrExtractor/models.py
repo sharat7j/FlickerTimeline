@@ -22,8 +22,8 @@ class Photo():
     _lastUpdated = ""
     _views = ""
 
-    def __init__(self, id):
-        self._id = id
+    def __init__(self, photo_id):
+        self._id = photo_id
 
     def populatePhotoInfo(self, photoInfoString):
         if photoInfoString is not None:
@@ -42,23 +42,22 @@ class Photo():
             return None
 
 
-
-
-
     def getImageUrl(self):
         # Create image url from this photo
         # refer http://www.flickr.com/services/api/misc.urls.html
         if self._id and self._farm is not None and self._server is not None and self._secret is not None:
-            self._image_url = ("http://farm{0}.staticflickr.com/{1}/{2}_{3}.jpg").format(self._farm, self._server,self._id, self._secret)
-            self._thumb_url = ("http://farm{0}.staticflickr.com/{1}/{2}_{3}_t.jpg").format(self._farm, self._server,self._id, self._secret)
+            self._image_url = ("http://farm{0}.staticflickr.com/{1}/{2}_{3}.jpg").format(self._farm, self._server,
+                                                                                         self._id, self._secret)
+            self._thumb_url = ("http://farm{0}.staticflickr.com/{1}/{2}_{3}_t.jpg").format(self._farm, self._server,
+                                                                                           self._id, self._secret)
+
 
 class RelatedList():
-
     _photoList = []
     _photoListJson = ""
     #_totalResults = ""
     def __init__(self, photoListJsonString):
-        return self.extractPhotos(photoListJsonString)
+        self.extractPhotos(photoListJsonString)
 
 
     def extractPhotos(self, jsonString):
@@ -68,7 +67,8 @@ class RelatedList():
                 if self._photoListJson['photos'] is not None:
                     if self._photoListJson['photos']['total'] is not None:
                         self._totalResults = self._photoListJson['photos']['total']
-                    if self._photoListJson['photos']['photo'] is not None and self._photoListJson['photos']['photo'].__len__() > 0:
+                    if self._photoListJson['photos']['photo'] is not None and self._photoListJson['photos'][
+                        'photo'].__len__() > 0:
                         for pic in self._photoListJson['photos']['photo']:
                             p = Photo(pic['id'])
                             p._owner = pic['owner']
