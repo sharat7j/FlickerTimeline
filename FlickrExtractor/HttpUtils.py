@@ -6,6 +6,8 @@ import json
 
 def getBadRequestJsonResponse(message=None, errorCode=407):
     res = {}
+    res.errorMsg = ""
+    res.errorCode = ""
     if message is not None:
         res.errorMsg = message
     res.errorCode = errorCode
