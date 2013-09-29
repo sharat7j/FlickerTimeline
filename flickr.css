@@ -1,0 +1,28 @@
+
+
+#tag {
+
+	max-width: 300px;
+    padding: 60px 29px 60px;
+    margin: auto auto auto auto;
+    alignment-adjust: central;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+
+body {
+	
+	background-image: url(http://3.bp.blogspot.com/-EsU_hbO_c3E/T2iKWhrgtuI/AAAAAAAAA54/J3D-jcAZSZw/s1600/Shining_Sunlight_and_Dried_Plants_HD_Nature_Wallpaper.png);
+	
+}
+
+form {
+	box-shadow: 20px 10px 5px #888;
+}
+
