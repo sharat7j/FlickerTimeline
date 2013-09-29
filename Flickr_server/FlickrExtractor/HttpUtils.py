@@ -16,8 +16,11 @@ def getBadRequestJsonResponse(message=None, errorCode=407):
 
     return HttpResponse(json.dumps(res), content_type='application/json')
 
-def getSuccessfulResponse():
-    res = {"result":"ok"}
-
+def getSuccessfulResponse(data=None):
+    res = {}
+    if data is None:
+        res = {"result":"ok"}
+    else:
+        res = data
     #d = serializers.serialize('json',res)
     return HttpResponse(json.dumps(res), content_type='application/json')

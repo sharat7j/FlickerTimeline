@@ -14,8 +14,35 @@ class Photo():
     _server = ""
     _farm = ""
     _title = ""
+    _dateUploaded = ""
+    _ownerUserName = ""
+    _description = ""
+    _postedDate = ""
+    _takenDate = ""
+    _lastUpdated = ""
+    _views = ""
+
     def __init__(self, id):
         self._id = id
+
+    def populatePhotoInfo(self, photoInfoString):
+        if photoInfoString is not None:
+            photoInfoJson = json.loads(photoInfoString, 'utf-8')
+            if photoInfoJson is not None and photoInfoJson['photo'] is not None:
+                self._dateUploaded = photoInfoJson['photo']['dateuploaded']
+                self._ownerUserName = photoInfoJson['photo']['owner']['username']
+                self._description = photoInfoJson['photo']['description']['_content']
+                self._postedDate = photoInfoJson['photo']['dates']['posted']
+                self._takenDate = photoInfoJson['photo']['dates']['taken']
+                self._lastUpdated = photoInfoJson['photo']['dates']['lastupdate']
+                self._views = photoInfoJson['photo']['views']
+
+            return self
+        else:
+            return None
+
+
+
 
 
     def getImageUrl(self):
