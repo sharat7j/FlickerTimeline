@@ -1,0 +1,18 @@
+{
+	"id": "id",
+	"document_name": "document_name",
+	"subject": "subject",
+	"content": {
+		"locations": [
+			"locationA",
+			"locationB"
+			],
+		"start_date": 1380409204,
+		"end_date": 1380409204
+	},
+	"user_mail_ids": [],
+	"timestamp": "timestamp",
+	"last_edited": "last_edited",
+	"last_edited_user": "last_edited_user",
+	"response": "ID"
+}
