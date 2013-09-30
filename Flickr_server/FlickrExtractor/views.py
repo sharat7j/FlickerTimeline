@@ -14,22 +14,24 @@ import logging
 
 logger = logging.getLogger('Search')
 
-@csrf_exempt
 def search(request, tag=None):
 
     if tag is not None:
         r = HttpUtils.url_fix(tag);
         logger.debug('Found request as %s', r )
         try :
-            list = getPhotosByTag(r)
-            details = getInfoOnRelatedPhotos(list)
+            ps = getPhotosByTag(r)
+            details = getInfoOnRelatedPhotos(ps)
+
             if details is not None:
                 data = generateTimelineJson(tag, details)
                 # write to json file for generating the timeline
-                fileName = writeJson(data)
+                fileName = writeJson(tag, data)
                 t = get_template('timeline.html')
                 html = t.render(Context({'file_name' : fileName}))
-                return HttpResponse(html)
+                respond =  HttpResponse(html, content_type="text/html")
+                respond['Cache-Control'] = "no-cache"
+                return respond
         except Exception as e:
             return HttpUtils.getBadRequestJsonResponse("Error Retrieving photos for tag", 404)
     else:
@@ -39,8 +41,8 @@ def getPhotosByTag(tag):
         try:
             url = Flickr_Urls._SEARCH_URL.format(tag).encode('utf-8')
             photoList = HttpUtils.sendRequest(url)
-            list = models.RelatedList(photoList)._photoList
-            return list
+            p = models.RelatedList(photoList)._photoList
+            return p
         except Exception as e:
             raise e.message()
 
@@ -91,10 +93,10 @@ def generateTimelineJson(tag, photoInfoList):
 
     return output
 
-def writeJson(jsonData):
+def writeJson(tag, jsonData):
     if jsonData is not None:
         path = "static/site-resources/json/"
-        fileName = "timeline.json"
+        fileName = "timeline_{0}.json".format(tag).encode('utf-8')
         if not os.path.exists(path):
             os.makedirs(path)
 
