@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="examples">
+    <CLASSES />
+    <JAVADOC>
+      <root url="file://$USER_HOME$/jars/httpcomponents-client-4.3-bin/javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/jars/httpcomponents-client-4.3-bin/examples" />
+    </SOURCES>
+  </library>
+</component>

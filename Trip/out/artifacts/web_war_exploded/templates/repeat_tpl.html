@@ -1,0 +1,79 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript"  src="resp.js"></script>
+
+<script type="text/javascript">
+
+    function submitform()
+    {
+        if(document.myform.onsubmit())
+        {
+            document.myform.submit();
+        }
+    }
+
+function disableOption2(){
+
+    var checkBox=document.getElementById("AdoptionDeliveryScore");
+    console.log(checkBox);
+    if(checkBox.checked){
+    checkBox.disabled="disabled";
+        console.log("true");
+    }
+    else if(!checkBox.checked){
+        console.log("false");
+        checkBox.disabled="";
+    }
+}
+function showHide() {
+        var div = document.getElementById('hidden_div');
+        if (div.style.display == 'none') {
+            div.style.display = '';
+        }
+        else {
+            div.style.display = 'none';
+        }
+    submitform();
+    }
+</script>
+<div class="app-bgcolor" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+
+
+    <div>
+        <form id="fileUploadAjax"action="UploadServlet" method="post"   onsubmit="showHide(); ">
+
+            <font face="verdana" color="white">Enter Tag Name </font>
+            <input id="file" type="text" name="file"  >
+
+
+
+
+            <input id="submitButton" type="submit" value="Submit"  class="btn btn-primary"
+                    />
+
+        </form>
+
+    </div>
+    <div id="reponse">
+
+    </div>
+    <div data-ng-hide="h2idden == true" data-ng-animate="'fade'">
+        <!-- <input type="search" data-ng-model="q" data-ng-change="filter(q)" placeholder="filter results..." />-->
+
+        <!-- <div class="tweet-records">
+           <div class="no-tweets" data-ng-hide="tweets.length > 0" data-ng-animate="{show: 'repeat-show', hide: 'repeat-hide'}">
+
+           </div>-->
+
+        <div class="tweet-record"
+             data-ng-animate="'repeat'"
+             data-ng-repeat="tweet in tweets">
+            <div class="inner">
+                <a href="" data-ng-click="filter(tweet.id_str)">
+                    <img data-ng-src="{{ tweet.profile_image_url }}" />
+                    <p data-ng-bind-html-unsafe="tweet.text"></p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
